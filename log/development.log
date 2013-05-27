@@ -1,0 +1,46 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (10.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (4.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateAccesorios (20130527154907)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "accesorios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" float, "description" varchar(255), "origin" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130527154907')[0m
+  [1m[35m (6.1ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/accesorios.json" for 127.0.0.1 at 2013-05-27 13:03:33 -0300
+Processing by AccesoriosController#index as JSON
+  [1m[36mAccesorio Load (0.7ms)[0m  [1mSELECT "accesorios".* FROM "accesorios" [0m
+Completed 200 OK in 78ms (Views: 4.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/accesorios.json" for 127.0.0.1 at 2013-05-27 13:03:59 -0300
+Processing by AccesoriosController#index as JSON
+  [1m[35mAccesorio Load (0.3ms)[0m  SELECT "accesorios".* FROM "accesorios" 
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/accesorios.json" for 127.0.0.1 at 2013-05-27 13:04:54 -0300
+Processing by AccesoriosController#index as JSON
+  [1m[36mAccesorio Load (0.2ms)[0m  [1mSELECT "accesorios".* FROM "accesorios" [0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/accesorios.json" for 127.0.0.1 at 2013-05-27 13:05:20 -0300
+Processing by AccesoriosController#index as JSON
+  [1m[35mAccesorio Load (0.2ms)[0m  SELECT "accesorios".* FROM "accesorios" 
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/accesorios.json" for 127.0.0.1 at 2013-05-27 13:07:13 -0300
+Processing by AccesoriosController#index as JSON
+  [1m[36mAccesorio Load (0.2ms)[0m  [1mSELECT "accesorios".* FROM "accesorios" [0m
+Completed 200 OK in 81ms (Views: 9.6ms | ActiveRecord: 3.2ms)
